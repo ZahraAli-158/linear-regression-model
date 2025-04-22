@@ -1,5 +1,5 @@
 # linear-regression-model
-        1.	Loading the Data
+   1.	Loading the Data
 A CSV file containing two columns, X and Y, is read into a Pandas DataFrame.
 	2.	Exploratory Data Analysis (EDA)
 The dataset is inspected using .head(), .tail(), and .sample() to view sample records. Basic information such as shape, column types, and summary statistics is obtained using .info() and .describe().
