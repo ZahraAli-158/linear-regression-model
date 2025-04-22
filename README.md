@@ -1,17 +1,14 @@
 # linear-regression-model
-  1.Loading the Data:
-	•	Reads a CSV file containing two columns X and Y.
-	2.	Basic Exploration:
-	•	Shows first few (head), last few (tail), and random (sample) rows.
-	•	Checks shape, data types, and statistics like mean, min, max (describe() and info()).
-	3.	Missing Values:
-	•	Checks for null values and fills them with mean if needed.
-	•	Drops rows with missing values as another step.
-	4.	Duplicates:
-	•	Removes any duplicate rows from the data.
-	5.	Outlier Detection:
-	•	Uses the IQR method to detect and remove outliers.
-	•	Box plots show data before and after outlier removal.
-	6.	Data Normalization:
-	•	Applies MinMaxScaler to scale values between 0 and 1.
-	•	Also shows StandardScaler which standardizes the data (mean=0, std=1).
+ 1.	Loading the Data
+A CSV file containing two columns, X and Y, is read into a Pandas DataFrame.
+	2.	Exploratory Data Analysis (EDA)
+The dataset is inspected using .head(), .tail(), and .sample() to view sample records. Basic information such as shape, column types, and summary statistics is obtained using .info() and .describe().
+	3.	Handling Missing Values
+Null values are checked and handled. Missing numerical values are imputed with the column mean. An additional approach also includes dropping rows with nulls.
+	4.	Removing Duplicates
+Duplicate rows are identified and removed to maintain data integrity.
+	5.	Outlier Detection and Removal
+The Interquartile Range (IQR) method is used to detect outliers. Boxplots are used to visualize the data before and after outlier removal.
+	6.	Feature Scaling
+	•	MinMaxScaler: Scales numerical features to a [0, 1] range.
+	•	StandardScaler: Standardizes features by removing the mean and scaling to unit variance (mean = 0, std = 1).
